@@ -12,13 +12,15 @@ def receive_form():
     data = request.json
     print('Data received: ', data)
 
+    
+
     # Process data (you can add your logic here)
     # if rccb5b3de7a4d476ba482356fcab1ec8d exists, get the vlaue
     if 'rccb5b3de7a4d476ba482356fcab1ec8d' in data:
         userId = data['rccb5b3de7a4d476ba482356fcab1ec8d']
 
         ## query some excel/CSV file to get rest of user information
-        
+
     else:
         userId = 'No user id'
 
